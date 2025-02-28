@@ -16,10 +16,10 @@ from bs4 import BeautifulSoup as bs
 
 # Configure vars get from env or config.yml
 CONFIG = yaml.load(open('config.yml', 'r'), Loader=yaml.SafeLoader)
-TOKEN = os.getenv('TOKEN', CONFIG['token'])
+TOKEN = os.getenv('TOKEN', CONFIG['7894345151:AAG4rDYNCZV3xbQ9ldCbqMKZ6F02CDwtxjE'])
 BLACKLISTED = os.getenv('BLACKLISTED', CONFIG['blacklisted']).split()
 PREFIX = os.getenv('PREFIX', CONFIG['prefix'])
-OWNER = int(os.getenv('OWNER', CONFIG['owner']))
+OWNER = int(os.getenv('OWNER', CONFIG['7438086281']))
 ANTISPAM = int(os.getenv('ANTISPAM', CONFIG['antispam']))
 
 # Initialize bot and dispatcher
